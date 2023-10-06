@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voting Eligibility Checker</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .eligible {
+      background-color: green;
+      color: white;
+    }
+
+    .ineligible {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Voting Eligibility Checker</h1>
+  
+  <p>Enter your age:</p>
+  <input type="number" id="ageInput">
+  <button onclick="checkAge()" id="checkButton">Check Eligibility</button>
+  
+  <p id="result"></p>
+
+  <script>
+    function checkVotingEligibility(age) {
+      if (age >= 18) {
+        return "You are eligible to vote!";
+      } else {
+        return "Sorry, you are not eligible to vote yet.";
+      }
+    }
+
+    function checkAge() {
+      var ageInput = document.getElementById("ageInput").value;
+      var resultElement = document.getElementById("result");
+      var eligibilityMessage = checkVotingEligibility(ageInput);
+      resultElement.textContent = eligibilityMessage;
+
+      var checkButton = document.getElementById("checkButton");
+      if (ageInput >= 18) {
+        checkButton.classList.remove("ineligible");
+        checkButton.classList.add("eligible");
+      } else {
+        checkButton.classList.remove("eligible");
+        checkButton.classList.add("ineligible");
+      }
+    }
+  </script>
+</body>
+</html>

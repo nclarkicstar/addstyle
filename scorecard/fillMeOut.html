@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: center;
+    }
+
+    th,
+    td.input-cell {
+      position: relative;
+    }
+
+    td.input-cell input {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0;
+      margin: 0;
+      border: none;
+      text-align: center;
+    }
+
+    /* Define background colors for different scores */
+    .score-1 {
+      background-color: #FF5733;
+      /* Red */
+      color: white;
+    }
+
+    .score-2 {
+      background-color: #FFA500;
+      /* Orange */
+    }
+
+    .score-3 {
+      background-color: #FFFF00;
+      /* Yellow */
+    }
+
+    .score-4 {
+      background-color: #7CFC00;
+      /* Lawn Green */
+    }
+
+    .score-5 {
+      background-color: #00FF00;
+      /* Green */
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Pillar</th>
+        <th>Characteristics</th>
+        <th>Score</th>
+        <th class="score-1">1</th>
+        <th class="score-2">2</th>
+        <th class="score-3">3</th>
+        <th class="score-4">4</th>
+        <th class="score-5">5</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="6">Teamwork Scorecard</td>
+        <td>Teamwork Ethic</td>
+        <td class="input-cell"><input type="number" min="1" max="5" value=""></td>
+
+        <td class="">Struggles to work in a team</td>
+        <td class="">Occasionally works well in a team</td>
+        <td class="">Works effectively in a team</td>
+        <td class="">Consistently contributes to the team</td>
+        <td class="">Exceptional team player, inspires others</td>
+      </tr>
+      <tr>
+        <td>Communication Skills</td>
+        <td class="input-cell"><input type="number" min="1" max="5" value=""></td>
+
+        <td class="">Poor communication, often misunderstood</td>
+        <td class="">Communicates adequately</td>
+        <td class="">Communicates clearly and effectively</td>
+        <td class="">Articulates ideas well, attentive listener</td>
+        <td class="">Outstanding communicator</td>
+      </tr>
+      <tr>
+        <td>Problem Solving</td>
+        <td class="input-cell"><input type="number" min="1" max="5" value=""></td>
+
+        <td class="">Struggles to identify or solve problems</td>
+        <td class="">Occasionally identifies solutions</td>
+        <td class="">Capable of finding effective solutions</td>
+        <td class="">Consistently resolves issues</td>
+        <td class="">Expert problem solver, innovative solutions</td>
+      </tr>
+      <tr>
+        <td>Leadership</td>
+        <td class="input-cell"><input type="number" min="1" max="5" value=""></td>
+
+        <td class="">Reluctant to take on leadership roles</td>
+        <td class="">Displays leadership in certain situations</td>
+        <td class="">Effectively guides and motivates others</td>
+        <td class="">Inspires and influences the team positively</td>
+        <td class="">Natural leader, gains respect and trust</td>
+      </tr>
+      <tr>
+        <td>Adaptability</td>
+        <td class="input-cell"><input type="number" min="1" max="5" value=""></td>
+
+        <td class="">Resists change, struggles to adapt</td>
+        <td class="">Adapts to change with some difficulty</td>
+        <td class="">Adjusts well with change</td>
+        <td class="">Nimble and thrives in dynamic environments</td>
+        <td class="">Embraces change, leads transitions</td>
+      </tr>
+      <tr>
+        <td>Conflict Resolution</td>
+        <td class="input-cell"><input type="number" min="1" max="5" value=""></td>
+
+        <td class="">Escalates conflicts, avoids resolution</td>
+        <td class="">Attempts resolution, not always successful</td>
+        <td class="">Mediates conflicts to reach agreements</td>
+        <td class="">Effectively resolves conflicts</td>
+        <td class="">Skilled at defusing tensions</td>
+      </tr>
+    </tbody>
+  </table>
+  <section id="template-buttons">
+    <a href="ViewScorecard.html"><button id="view-templates-button">View Saved Templates</button></a>
+  </section>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</body>
+
+</html>

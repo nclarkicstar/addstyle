@@ -1,0 +1,274 @@
+/* Reset some default styles for better consistency */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply basic styling to the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  /* Add position relative to body */
+}
+
+/* Style the header */
+header {
+  background-color: #337ab7;
+  color: #fff;
+}
+
+header img {
+  max-width: 100px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+/* Style the navigation bar (if used in other pages) */
+nav ul {
+  list-style: none;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav li,
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Style the main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Position the User Profile Section */
+#user-profile {
+  position: absolute;
+  /* Position the user profile absolutely */
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.user-profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Style the user-profile sections */
+.user-profile {
+  margin: 20px 0;
+  /* Adjust the margin to add spacing between team members */
+}
+
+.username {
+  font-weight: bold;
+}
+
+/* Position the User Profile Section */
+#user-profile {
+  position: absolute;
+  /* Position the user profile absolutely */
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.user-profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Style the user-profile sections */
+.user-profile {
+  margin: 20px 0;
+  /* Adjust the margin to add spacing between team members */
+}
+
+.username {
+  font-weight: bold;
+}
+
+/* Adjust the image size for user profiles */
+.user-profile img {
+  max-width: 75px;
+  /* Adjust the maximum width */
+  max-height: 75px;
+  /* Adjust the maximum height */
+  border-radius: 50%;
+}
+
+/* Style the footer (if used in other pages) */
+footer {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Style the Template Buttons */
+#template-buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#create-template-button,
+#view-templates-button {
+  display: block;
+  background-color: #337ab7;
+  color: #fff;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px auto;
+  font-size: 18px;
+}
+
+#create-template-button:hover,
+#view-templates-button:hover {
+  background-color: #286090;
+}
+
+/* Styles for View Scorecard Page */
+#melinescorecard {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#melinescorecard h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #0072ce;
+}
+
+#melinescorecard h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* Add CSS for the form elements */
+form {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-password {
+  text-decoration: none;
+  color: #337ab7;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+button {
+  display: inline-block;
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #286090;
+}
+
+/* Style the team images */
+.team-image {
+  width: 50px;
+  /* Adjust the width for team images */
+  height: 50px;
+  /* Adjust the height for team images */
+  border-radius: 50%;
+  margin-right: 10px;
+}

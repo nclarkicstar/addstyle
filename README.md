@@ -29,7 +29,7 @@ The project is currently under development, and this section will be updated wit
 - TechBridge Consulting (TBC)
   - Project Manager: Grant Cagape
     - Email: gcagape@icstars.org
-  - Business Analyst: Victoria Muduc
+  - Business Analyst: Victoria Muduc 
     - Email: vmuduc@icstars.org
   - Technical Analyst: Nathan Clark
     - Email: nclark@icstars.org

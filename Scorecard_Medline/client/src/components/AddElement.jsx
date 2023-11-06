@@ -1,18 +1,35 @@
 import React, { useState } from 'react';
 import ScorecardFinder from '../apis/ScorecardFinder';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 
 
-const AddElement = () => {
-        const location = useLocation ()
-    const [name, setName] = useState("")
-    const [elementText, setElementText] = useState("")
-    const [weight, setWeight] = useState("")
-
-    const handleSubmitElement = (e) => {
+const AddElement = ({fetchData}) => {
+    const { id } = useParams();
+    const location = useLocation ();
+    const [name, setName] = useState("");
+    const [elementText, setElementText] = useState("");
+    const [weight, setWeight] = useState("");
+    
+    const handleSubmitElement = async (e) => {
         e.preventDefault()
-        //ScorecardFinder.post()
-    }
+        try {
+            const response = await ScorecardFinder.post(`/${id}/addElement`, {
+            name,
+            description: elementText,
+            weight,
+            });
+            setName("")
+            setElementText("")
+            setWeight("")
+
+          fetchData()
+          
+          
+          }catch (err){};
+        }
+
+        const reloadThePage = () => {window.location.reload();};
+
     return (
         <div className='mb-2'>
         <form action="">
@@ -36,7 +53,7 @@ const AddElement = () => {
                         id="weight"   
                         className="custom-select"
                     >
-                        <option disabled>Total Weight</option>
+                        <option value="">Total Weight</option>
                         <option value="5">5%</option>
                         <option value="10">10%</option>
                         <option value="15">15%</option>
@@ -52,11 +69,11 @@ const AddElement = () => {
                 </div>
             </div>
             <div className="form-group">
-                <label htmlFor="Description" >Description</label>
+                <label htmlFor="Element" >Description</label>
                 <textarea 
                     value={elementText}
                     onChange={e => setElementText(e.target.value)}
-                    id="description" 
+                    id="element" 
                     className="form-control" 
                     style={{maxWidth: "70%"}}>
                 </textarea>
